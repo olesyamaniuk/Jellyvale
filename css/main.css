@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
 }
@@ -11,7 +11,7 @@
 html {
   scroll-behavior: smooth;
   background: rgba(255, 255, 255, 1);
-  color: rgba(70, 16, 66, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 body {
@@ -113,9 +113,7 @@ a {
   background: transparent;
   display: flex;
   height: 60px;
-  border-bottom: 4px solid rgba(70, 16, 66, 1);
-  backdrop-filter: blur(24px);
-  background: linear-gradient(180deg, #ffd500 0%, #ed8300 59%, #db3100 100%);
+  background: rgba(38, 139, 1, 1);
 }
 .header__background {
   position: absolute;
@@ -127,8 +125,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  border-bottom: 4px solid rgba(70, 16, 66, 1);
-  backdrop-filter: blur(24px);
+  background: rgba(38, 139, 1, 1);
 }
 .header.is-open .header__background {
   left: 0;
@@ -187,14 +184,14 @@ a {
   display: flex;
   flex-direction: column;
 
-  align-items: center;
+  align-items: start;
 
   top: 130px;
   position: absolute;
   top: 100%;
   right: -100%;
   width: 100%;
-  height: 457px;
+  height: 507px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 999;
@@ -203,32 +200,25 @@ a {
 
   border-radius: 0px 0px 20px 20px;
   gap: 28px;
-  background: rgba(255, 211, 1, 1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(233, 255, 146, 1);
+  border-bottom: 2px solid rgba(50, 62, 112, 1);
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24.55px;
+  line-height: 20.68px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: rgba(70, 16, 66, 1);
+  color: rgba(9, 32, 5, 1);
 }
-.navigation__link:hover,
-.navigation__link:focus {
-  padding: 12px 24px 12px 24px;
-  background: rgba(70, 16, 66, 1);
 
-  border-radius: 100px;
-  color: rgba(255, 255, 255, 1);
-}
 .header.is-open {
   background-color: transparent;
 }
@@ -248,7 +238,7 @@ a {
     width: 100%;
 
     height: 90px;
-    padding: 10px 20px 10px 0;
+    padding: 10px 20px 10px 210px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +275,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 23px;
+    gap: 100px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -293,24 +283,17 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-family: Nunito;
+    font-family: Ubuntu;
     font-size: 18px;
     font-weight: 700;
-    line-height: 24.55px;
+    line-height: 20.68px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    padding: 12px 24px 12px 24px;
+    color: rgba(233, 255, 146, 1);
     text-decoration: none;
   }
-  .navigation__link:hover,
-  .navigation__link:focus {
-    background: rgba(70, 16, 66, 1);
 
-    border-radius: 20px;
-    color: rgba(253, 253, 253, 1);
-  }
   .header__icon-home-img {
     display: none;
   }
@@ -321,13 +304,13 @@ a {
 
 .home {
   width: 375px;
-  height: 900px;
+  height: 760px;
 
-  padding: 60px 8px 0px;
+  padding: 60px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/hero/Home.png");
+  background-image: url("/img/home/Home.png");
   margin: auto;
 }
 
@@ -337,44 +320,45 @@ a {
   align-items: center;
 }
 .home-title-img {
-  width: 249px;
-  height: 171px;
+  width: 375px;
+  height: 120.9px;
 }
 .home-title {
-  font-family: Nunito;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 24px;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.28px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   text-transform: uppercase;
 
   color: rgba(255, 255, 255, 1);
 }
 
 .home-text {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 14px;
-  font-weight: 900;
-  line-height: 20px;
+  font-weight: 500;
+  line-height: 16.09px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   color: rgba(255, 255, 255, 1);
-  padding: 8px 0 0;
+  padding: 18px 0 0;
 }
 .home__google-button_image {
-  margin-top: 22px;
+  margin-top: 25px;
 }
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 800px;
+    height: 799px;
 
-    padding: 103px 601px 0px 28px;
-    background-image: url("/image/hero/Home\ \(1\).png");
+    padding: 129px 691px 0px 46px;
+    background-image: url("/img/home/Home\ \(1\).png");
   }
   .home__container-top {
     display: flex;
@@ -383,92 +367,100 @@ a {
     justify-content: center;
   }
   .home-title-img {
-    width: 415px;
-    height: 286px;
+    width: 618px;
+    height: 201px;
   }
   .home-title {
-    font-family: Nunito;
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 38px;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36.77px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 627px;
+
+    width: 618px;
   }
 
   .home-text {
-    font-family: Nunito;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 20px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.68px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    width: 811px;
-    padding: 12px 0 0;
+    width: 618px;
+    padding: 22px 0 0;
   }
 }
 .about {
-  padding: 22px 20px 0px;
+  padding: 28px 20px 0px;
   margin: auto;
   width: 375px;
-  height: 1091px;
+  height: 1106px;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/about/About\ us.png");
+  background-image: url("/img/about/About\ us.png");
 }
 
 .about-title {
-  font-family: Nunito;
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 54.56px;
-  letter-spacing: 0.03em;
+  font-family: Ubuntu;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39.07px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  color: rgba(9, 32, 5, 1);
 }
 .about-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
+  gap: 16px;
+  padding-top: 40px;
 }
 .about-text {
-  font-family: Nunito;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.38px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   width: 335px;
-  padding: 14px 20px;
-  border-radius: 22px;
+  padding: 22px;
+  border-radius: 36px;
   background: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(70, 16, 66, 1);
 }
-
+.about-tetx-bold {
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22.98px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 10px;
+}
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 32px 52px 0;
+    padding: 28px 31px 0;
     margin: auto;
     width: 1440px;
-    height: 600px;
-    background-image: url("/image/about/About\ us\ \(1\).png");
+    height: 599px;
+    background-image: url("/img/about/About\ us\ \(1\).png");
   }
 
   .about-title {
-    font-family: Nunito;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 54.56px;
-    letter-spacing: 0.03em;
+    font-family: Ubuntu;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 39.07px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -478,70 +470,71 @@ a {
     display: flex;
     flex-direction: column;
 
-    gap: 12px;
-    padding-top: 51px;
+    gap: 16px;
+    padding-top: 62px;
   }
   .about-text {
-    width: 648px;
-    padding: 14px 22px;
+    width: 833px;
+    padding: 22px;
   }
 }
 .reviews {
   width: 375px;
-  height: 660px;
 
   margin: auto;
-  padding: 32px 0px 0;
+  padding: 32px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-image: url("/image/reviews/Reviews.png");
+  background-image: url("/img/reviews/User\ Reviews.png");
 }
 
 .reviews-list {
   width: auto;
   padding-top: 40px;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   margin: auto;
 }
 .reviews-item {
   margin: 0 5px;
   width: 335px;
-  height: 442px;
-  padding: 14px;
-
-  border-radius: 22px;
-
-  background: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(70, 16, 66, 1);
 }
 .reviews-img {
-  width: 100px;
   margin: auto;
+}
+.reviews-item-texts {
+  width: 335px;
+  height: 225px;
+  margin-top: 16px;
+  padding: 16px 36px 16px 36px;
+
+  border-radius: 26px;
+
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 1);
 }
 .reviews-text-bold {
-  font-family: Nunito;
-  font-size: 26px;
+  font-family: Ubuntu;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 22.98px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 12px 0;
+
+  padding: 0px 0 2px;
 }
 .reviews-text {
-  font-family: Nunito;
-  font-size: 18px;
+  font-family: Ubuntu;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-bottom: 16px;
 }
-.reviews-img-two {
-  margin: auto;
-}
+
 .gallery-button-container {
   display: flex;
   align-items: center;
@@ -564,67 +557,49 @@ a {
 @media screen and (min-width: 1200px) {
   .reviews {
     width: 1440px;
-    height: 600px;
 
     margin: auto;
-    padding: 42px 0px 0;
+    padding: 38px 60px 91px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-image: url("/image/reviews/Reviews\ \(1\).png");
+    background-image: url("/img/reviews/User\ Reviews\ \(1\).png");
   }
 
   .reviews-list {
     width: auto;
-    padding-top: 40px;
-    padding-bottom: 28px;
+    padding-top: 64px;
+    padding-bottom: 40px;
     margin: auto;
   }
   .reviews-item {
-    margin: 0 10px;
-    width: 766px;
-    height: 292px;
-
-    padding: 14px;
-    gap: 22px;
-    align-items: center;
-    display: flex;
+    margin: 0 5px;
+    width: 564px;
   }
   .reviews-img {
-    width: 180px;
-    height: 180px;
-    margin: 0;
+    margin: auto;
+  }
+  .reviews-item-texts {
+    width: 540px;
+    height: 225px;
+    margin-top: 18px;
+    padding: 36px 36px;
+
+    border-radius: 26px;
+
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 1);
   }
   .reviews-text-bold {
-    font-family: Nunito;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding: 0px 0 18px;
-  }
-  .reviews-text {
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding-bottom: 16px;
-  }
-  .reviews-img-two {
-    margin: 0;
+    padding: 0px 0 6px;
   }
 }
 
 .gallery {
   width: 375px;
-  background: rgba(215, 171, 255, 1);
+  background: rgba(233, 255, 146, 1);
+
   margin: auto;
   padding: 32px 0px;
 }
@@ -632,13 +607,13 @@ a {
 .gallery__list {
   width: auto;
   padding-top: 40px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 
   margin: auto;
 }
 .gallery__item {
-  width: 285.13px;
-  height: 400px;
+  width: 320px;
+  height: 460px;
 
   overflow: hidden;
   position: relative;
@@ -661,58 +636,54 @@ a {
   }
 
   .gallery__item {
-    width: 285.13px;
-    height: 400px;
-
+    width: 370px;
+    height: 532px;
+    margin: 0 10px;
     overflow: hidden;
     position: relative;
   }
 }
 .features {
   width: 375px;
-  height: 1266px;
+  height: 1120px;
 
   margin: auto;
-  padding: 32px 30px 0px;
+  padding: 28px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/features/Benefits.png");
+  background-image: url("/img/features/Advantages.png");
 }
 
 .features-list {
-  padding-top: 40px;
+  padding-top: 28px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 22px;
 }
 .features-item {
-  width: 316px;
-  padding: 20px 18px;
-  border-radius: 22px;
-  opacity: 0px;
-  background: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(70, 16, 66, 1);
+  width: 335px;
 }
 .features-img {
   margin: auto;
 }
 .features-text-bold {
-  font-family: Nunito;
-  font-size: 18px;
+  font-family: Ubuntu;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 24.55px;
+  line-height: 22.98px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 6px;
+
+  padding: 16px 0 8px;
 }
 .features-text {
-  font-family: Nunito;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.1px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.38px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -721,37 +692,119 @@ a {
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    height: 400px;
+    height: 798px;
 
-    margin: auto;
-    padding: 32px 55px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/features/Benefits\ \(1\).png");
+    padding: 28px 240px 0px;
+
+    background-image: url("/img/features/Advantages\ \(1\).png");
   }
 
   .features-list {
-    padding-top: 20px;
+    padding-top: 60px;
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 33px;
+    flex-wrap: wrap;
+    gap: 28px;
+    column-gap: 80px;
+    justify-content: center;
   }
   .features-item {
-    width: 316px;
-    padding: 20px 18px;
-    border-radius: 22px;
-    opacity: 0px;
-    background: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(70, 16, 66, 1);
+    width: 423px;
+  }
+}
+.benefits {
+  width: 375px;
+  margin: auto;
+  padding: 28px 0px;
+  background: linear-gradient(0deg, #39720b, #39720b);
+}
+
+.benefits-list {
+  padding-top: 40px;
+  margin: auto;
+  padding-bottom: 32px;
+}
+.benefits-item {
+  width: 335px;
+  height: 364.7px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 1);
+  margin: 0 5px;
+}
+.benefits-img {
+  margin: auto;
+}
+.benefits-text-bold {
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20.68px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 18px 0 10px;
+}
+.benefits-text {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    width: 1440px;
+    margin: auto;
+    padding: 28px 80px;
+    background: linear-gradient(0deg, #39720b, #39720b);
+  }
+
+  .benefits-list {
+    padding-top: 64px;
+    margin: auto;
+    padding-bottom: 32px;
+  }
+  .benefits-item {
+    width: 540px;
+    height: 187px;
+    display: flex;
+    gap: 18px;
+    margin: 0 10px;
+  }
+  .benefits-img {
+    margin: 0;
+  }
+  .benefits-text-bold {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.68px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    padding: 0px 0 10px;
+  }
+  .benefits-text {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
 }
 .footer {
-  background: rgba(70, 16, 66, 1);
+  background: rgba(57, 114, 11, 1);
 
   color: #ffffff;
-  padding: 14px 0px;
+  padding: 14px;
 }
 .footer-container {
   display: flex;
@@ -771,23 +824,24 @@ a {
   gap: 4px;
 }
 .footer-text {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 16px;
   font-weight: 500;
-  line-height: 21.82px;
+  line-height: 18.38px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
 }
 
 .footer-copyright {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 10px;
   font-weight: 500;
-  line-height: 13.64px;
+  line-height: 11.49px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -807,23 +861,23 @@ a {
     justify-content: end;
     align-items: end;
 
-    gap: 4px;
+    gap: 6px;
   }
   .footer-text {
-    font-family: Nunito;
+    font-family: Ubuntu;
     font-size: 18px;
     font-weight: 500;
-    line-height: 24.55px;
+    line-height: 20.68px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .footer-copyright {
-    font-family: Nunito;
+    font-family: Ubuntu;
     font-size: 10px;
     font-weight: 500;
-    line-height: 13.64px;
+    line-height: 11.49px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -834,7 +888,7 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 .policy-terms-title {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -844,7 +898,7 @@ a {
 }
 
 .policy-terms-text {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -855,7 +909,7 @@ a {
   padding-top: 20px;
 }
 .policy-terms-texts {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -866,7 +920,7 @@ a {
   padding-top: 8px;
 }
 .policy-terms-text-one {
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -881,7 +935,7 @@ a {
   list-style-type: disc;
 
   padding: 20px 0 20px 25px;
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -897,7 +951,7 @@ a {
   list-style-type: disc;
 
   padding-left: 25px;
-  font-family: Nunito;
+  font-family: Ubuntu;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -916,5 +970,104 @@ a {
 @media screen and (min-width: 1200px) {
   .policy-terms-container {
     padding: 186px 80px 116px;
+  }
+}
+.cookie-popup {
+  position: fixed;
+  bottom: 10px;
+  width: 335px;
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(24, 179, 0, 1);
+  box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
+
+  text-align: center;
+  z-index: 1000;
+
+  display: none;
+}
+
+.cookie-popup-text-two {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(87, 78, 68, 1);
+}
+.cookie-button-container {
+  padding: 30px 0 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cookie-button {
+  border: none;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(87, 78, 68, 1);
+  border: none;
+  background-color: transparent;
+}
+#accept-cookies {
+  width: 167px;
+
+  padding: 18px 26px 18px 26px;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 56px;
+  opacity: 0px;
+  background: rgba(24, 179, 0, 1);
+  box-shadow: 0px 3px 12px 0px rgba(74, 58, 255, 0.18);
+}
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .cookie-popup-text-two {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    width: 648px;
+  }
+  .cookie-button-container {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+  .cookie-popup {
+    position: fixed;
+    bottom: 10px;
+    width: 1272px;
+
+    padding: 52px;
+    display: none;
+  }
+
+  .cookie-popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
